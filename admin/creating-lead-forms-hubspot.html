@@ -1,461 +1,57 @@
-﻿<!doctype html>
-<html lang="zh-TW">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  
-  <title>在中心建立潛在客戶表單</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">    <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
-  <link rel="stylesheet" href="/assets/css/local.css">
-  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&display=swap">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
-  <script src="/assets/js/sajari-head.js"></script>
-</head>
-
-<body class="body">
-
-<header>
-  <div class="div-header">
-    <a href="/"><span class="product-logo" style="font-family:'Balto Web','Public Sans';font-size:2em;font-weight:bold;">布萊特灣運動<sup>™</sup></span></a>
-<!-- GTranslate: https://gtranslate.io/ -->
-<select onchange="doGTranslate(this);"><option value="">選擇語言</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
-
-<script>
-/* <![CDATA[ */
-function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
-/* ]]> */
-</script>
-
-Brightcove 
-
-    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="支持"/>聯繫支持</a><span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span><a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="系統狀態"/>系統狀況</a></span><br/>
-    
-  </div>
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb arr-right">
-      
-      <li class="breadcrumb-item"><a href="/">首頁</a></li>
-      
-      
-      
-      <li class="breadcrumb-item"><a href="/admin/">管理帳戶</a></li>
-      
-      <li class="breadcrumb-item active" aria-current="page">在中心建立潛在客戶表單</li>
-    </ol>
-  </nav>
-</header>
-<div class="container">
-    <div class="row">
-      <div class="col-sm-3 left-side-bar">
-        				<select id="site_select" class="bcls-select" style="margin-right: 1rem;">
-					<option value="">其他布萊特灣文件</option>
-					
-						
-							<option value="https://support.brightcove.com">文件首頁</option>
-						
-					
-						
-							<option value="https://audience.support.brightcove.com">布萊特灣觀眾</option>
-						
-					
-						
-							<option value="https://beacon.support.brightcove.com">布萊特灣燈塔</option>
-						
-					
-						
-							<option value="https://campaign.support.brightcove.com">布萊特灣戰役</option>
-						
-					
-						
-							<option value="https://engage.support.brightcove.com">布萊特灣參與</option>
-						
-					
-						
-							<option value="https://live.support.brightcove.com">Brightcove Live</option>
-						
-					
-						
-							<option value="https://gallery.support.brightcove.com">Brightcove 圖庫</option>
-						
-					
-						
-							<option value="https://ssai.support.brightcove.com">布萊特灣</option>
-						
-					
-						
-							<option value="https://social.support.brightcove.com">布萊特灣社會</option>
-						
-					
-						
-							<option value="https://studio.support.brightcove.com">視訊雲端工作室</option>
-						
-					
-						
-							<option value="https://player.support.brightcove.com">布萊特灣球員開發</option>
-						
-					
-						
-							<option value="https://apis.support.brightcove.com">視訊雲端平台 API</option>
-						
-					
-						
-							<option value="https://sdks.support.brightcove.com">視訊雲端裝置開發套件</option>
-						
-					
-						
-							<option value="https://integrations.support.brightcove.com">整合與 CMS 連接器</option>
-						
-					
-						
-							<option value="https://general.support.brightcove.com">視訊雲端一般資訊</option>
-						
-					
-						
-							<option value="https://zencoder.support.brightcove.com">Zencoder</option>
-						
-					
-				</select>
-						<nav class="sidenav" id="side_nav">
-
-          
-            
-            <h5><a href="/index.html">首頁</a></h5>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/get-started/index.html">開始使<strong>用 + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/get-started/brightcove-campaign-training-videos.html">行銷活動訓練影片</a></li>
-                  
-                
-                  
-                    <li><a href="/get-started/getting-started-brightcove-campaign.html">開始使用布萊特灣戰役</a></li>
-                  
-                
-                  
-                    <li><a href="/get-started/getting-started-brightcove-campaign-trial.html">開始使用布萊特灣戰役試用版</a></li>
-                  
-                
-                  
-                    <li><a href="/get-started/overview-video-content-types.html">視訊內容類型概觀</a></li>
-                  
-                
-                  
-                    <li><a href="/get-started/uploading-publishing-your-first-video.html">上傳和發佈您的第一部影片</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/videos/index.html">管理視訊<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/videos/adding-text-tracks-to-a-video.html">新增文字軌</a></li>
-                  
-                
-                  
-                    <li><a href="/videos/capturing-poster-and-thumbnail-images.html">擷取海報和縮圖影像</a></li>
-                  
-                
-                  
-                    <li><a href="/videos/driving-video-views-email.html">透過電子郵件推動視訊觀看</a></li>
-                  
-                
-                  
-                    <li><a href="/videos/editing-video-properties.html">編輯視訊屬性</a></li>
-                  
-                
-                  
-                    <li><a href="/videos/managing-videos.html">管理視訊</a></li>
-                  
-                
-                  
-                    <li><a href="/videos/publishing-videos.html">發佈視訊</a></li>
-                  
-                
-                  
-                    <li><a href="/videos/how-to-search-for-videos.html">搜尋影片</a></li>
-                  
-                
-                  
-                    <li><a href="/videos/uploading-poster-and-thumbnail-images.html">上傳海報和縮圖影像</a></li>
-                  
-                
-                  
-                    <li><a href="/videos/uploading-videos.html">上傳視訊</a></li>
-                  
-                
-                  
-                    <li><a href="/videos/working-with-shared-videos.html">使用共用的視訊</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/dashboard/index.html">複查儀表板<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/dashboard/dashboard-overview.html">儀表板概述</a></li>
-                  
-                
-                  
-                    <li><a href="/dashboard/reviewing-adv-dashboard.html">複查進階儀表板</a></li>
-                  
-                
-                  
-                    <li><a href="/dashboard/reviewing-basic-dashboard.html">複查基本儀表板</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/analytics/index.html">檢閱分析<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/analytics/how-vbs-calculated.html">如何計算影片基準分數</a></li>
-                  
-                
-                  
-                    <li><a href="/analytics/reviewing-video-analytics.html">檢閱視訊分析</a></li>
-                  
-                
-                  
-                    <li><a href="/analytics/using-hud.html">使用抬頭顯示器 Chrome 擴充功能</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/admin/index.html">管理帳號<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/admin/configuring-adobe-analytics-event-tracking.html">設定 Adobe 分析</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/configuring-google-analytics-event-tracking.html">配置谷歌分析</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/configuring-map-connections.html">設定地圖連線</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/connecting-to-hubspot-client-side-api.html">連線到中樞 (用戶端 API) </a></li>
-                  
-                
-                  
-                    <li><a href="/admin/connecting-to-hubspot-rest-api.html">連線到中樞點 (其他應用程式介面) </a></li>
-                  
-                
-                  
-                    <li><a href="/admin/connecting-to-marketo-munchkin.html">連接到馬克托（蒙奇金）</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/connecting-to-marketo-rest-api.html">連線至市場 (其他應用程式介面) </a></li>
-                  
-                
-                  
-                    <li><a href="/admin/connecting-to-oracle-eloqua.html">連線至 Oracle 埃洛卡</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/connecting-to-salesforce.html">連線至銷售團隊</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/creating-salesforce-object-pardot.html">為帕朵創建一個 Salesforce 對象</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/creating-lead-forms.html">建立潛在客戶表單</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/creating-lead-forms-hubspot.html">在中心建立潛在客戶表單</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/creating-lead-forms-marketo.html">在市場中建立潛在客戶表單</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/creating-lead-forms-oracle-eloqua.html">在 Oracle 生態管理系統中建立潛在客戶表單</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/creating-lead-forms-salesforce.html">在銷售中建立潛在客戶表單</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/managing-account-information.html">管理帳戶資訊</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/managing-account-settings.html">管理帳戶設定</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/managing-media-sharing-settings.html">管理媒體共用設定</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/managing-profile-information.html">管理設定檔資訊</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/managing-users.html">管理使用者</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/styling-players.html">造型播放器</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/reviewing-player-event-data-in-google-analytics.html">在谷歌分析中查看球員賽事數據</a></li>
-                  
-                
-                  
-                    <li><a href="/admin/viewing-billing-information.html">檢視帳單資訊</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/release-notes/index.html">版本說明<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/release-notes/2020.html">2020 </a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/support/index.html">支援<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    
-                  
-                
-                  
-                    <li><a href="/support/viewing-brightcove-system-status-page.html">檢視布萊特灣系統狀態頁面</a></li>
-                  
-                
-                  
-                    <li><a href="/support/contact-sales.html">聯絡銷售人員</a></li>
-                  
-                
-                  
-                    <li><a href="/support/opening-case-with-brightcove-support.html">開啟支援案例</a></li>
-                  
-                
-              </ul>
-            
-          
-      </nav>
-    </div>
-    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
-  <!-- bootstrap layout -->
-
-<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="導覽功能表"/></p>
-<ul id="in_prod_nav" class="pager" style="display: none;">
-  <li><a href="#"><img src="/assets/images/feather/chevron-left.svg" alt="背部"/></a></li>
-  <li>&nbsp;&nbsp;&nbsp;&nbsp;信標文件&nbsp;&nbsp;&nbsp;&nbsp;</li>
-  <li><a href="#"><img src="/assets/images/feather/chevron-right.svg" alt="前進"/></a></li>
-</ul>
-
-<!-- search bar -->
-<div id="nav-search-box" style="margin-top: 1rem;"></div>
-<!-- in-page navigation for narrow screens -->
-<details class="centered-inpage-nav" id="centered_inpage_nav">
-  <summary><h6 class="toc">頁面內容</h6></summary>
-  <nav id="centered_toc"></nav>
-  <ul id="centered_in_page_toc" class="list-none"></ul>
-</details>
-<!-- open in new tab/window -->
-<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="在新分頁中開啟" style="margin-top:4em;"/></a>
-
-
-
-  
-    
-
+---
+title:在 HubSpot 中創建潛在客戶表單
+parent: Administering Accounts
+description: In this topic you will learn how to create a HubSpot form that can be used to capture lead data during video playback.
+---
 
 <article class="bcls-article">
-  <h1>在中心建立潛在客戶表單</h1>
-  <summary>在本主題中，您將學習如何創建HubSpot表單，該表單可用於在視頻播放期間捕獲潛在客戶數據。</summary>
+  <h1>在HubSpot中創建銷售線索表格</h1>
+  <summary>{{ page.description }}</summary>
   <section class="bcls-section">
-    <p>Brightcove 運動提供了創建潛在客戶表單的能力，允許您在視頻播放過程中捕獲觀眾信息。表單讓您能夠包含您需要的任何欄位 (可見或隱藏)，並讓您能夠利用漸進式分析 (如果可用) 等功能。潛在客戶資料會傳送給 HubSpot，並由其處理。 </p>
+    <p>Brightcove Campaign提供了創建銷售線索表格的功能，該功能使您可以在視頻播放期間捕獲觀眾信息。表單使您能夠包括所需的任何字段（可見或隱藏），還使您能夠利用諸如逐步分析（如果有）之類的功能。潛在客戶數據將發送到HubSpot並由HubSpot處理。 </p>
   </section>
   <section class="bcls-section">
-    <h2 id="form">在 HubSpot 中建立表單</h2>
-    <p>HubSpot提供了創建可用於捕獲查看器信息的表單的功能。所產生的表單 HTML 將在 Brightcove 運動中創建一個潛在客戶表單時使用。擷取的資料可用於自訂未來的通訊。下面的步驟將創建一個簡單的表單來捕獲名字，姓氏和電子郵件地址。如需有關 HubSpot 表單的完整詳細資訊，請參閱<a href="https://knowledge.hubspot.com/landing-page-user-guide-v2/how-to-create-a-form-for-your-landing-page"> HubSpot 文件</a>。</p>
+    <h2 id="form">在HubSpot中創建表單</h2>
+    <p>HubSpot提供了創建可用於捕獲查看器信息的表單的功能。在Brightcove Campaign中創建銷售線索表單時，將使用生成的HTML表單。然後可以將捕獲的數據用於自定義將來的通信。下面的步驟將創建一個簡單的表單來捕獲名字，姓氏和電子郵件地址。有關HubSpot表單的完整詳細信息，請參見<a href="https://knowledge.hubspot.com/landing-page-user-guide-v2/how-to-create-a-form-for-your-landing-page">HubSpot文檔</a>。</p>
     <ol class="bcls-tasklist-restart">
-      <li>登入您的帳戶。</li>
-      <li>按一下「<strong>行銷 &gt; 表單</strong>」。如果您使用 [傳統] 功能表，請按一下 [ <strong>連絡人 &gt; </strong><strong>表</strong>單]。</li>
-      <li>按一下「<strong>建立塑形</strong>」。默認情況下，表單將包含一個<strong>電子郵件</strong>字段和一個<strong>提交</strong>按鈕。</li>
-      <li>確定已選取「一<strong>般表單</strong>」類型。按<strong>一下下一步</strong>。</li>
-      <li>確定已選取「<strong>空白範本</strong>」。按一下「<strong>開始</strong>」。</li>
-      <li>按一下標題中的預設名稱並命名表單。按<strong> Enter </strong>儲存變更。
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="hubspot表單名稱" src="/assets/images/admin/hubspot-name-form.png"/></figure>
+      <li>登錄到您的HubSpot帳戶。</li>
+      <li>點擊<strong>營銷 &gt; 形式</strong> .如果您使用的是“經典"菜單，請單擊<strong>聯絡人</strong> &gt; <strong>形式</strong>。</li>
+      <li>點擊<strong>建立表格</strong>。默認情況下，該表單將包含一個<strong>電子郵件</strong>場和<strong>提交</strong>按鈕。</li>
+      <li>確保<strong>正規表格</strong>類型被選擇。點擊<strong>下一個</strong>。</li>
+      <li>確保<strong>空白模板</strong>被選中。點擊<strong>開始</strong>。</li>
+      <li>單擊標題中的默認名稱，然後為表單命名。按<strong>進入</strong>保存更改。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="hubspot form name" src="/assets/images/admin/hubspot-name-form.png" /></figure>
       </li>
-      <li>頁面的左側包含可新增至表單的欄位清單。將您想要在表單上的 [ <strong>名字] 和 [ <strong>姓</strong>氏</strong> ] 欄位拖放到頁面的右側。
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="hubspot表單字段" src="/assets/images/admin/hubspot-drag-field.png"/></figure>
+      <li>頁面的左側包含可以添加到表單的字段列表。拖放<strong>名</strong>和<strong>姓</strong>您想要在頁面右側表單上的字段。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="hubspot form fields" src="/assets/images/admin/hubspot-drag-field.png" /></figure>
       </li>
-      <li>若要將欄位設為必填欄位，請將滑鼠移至該欄位上方，然後按一下「<strong> &gt; 更多</strong>必填欄位會在欄位標籤旁邊顯示 *。
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="樞紐表單字段必填" src="/assets/images/admin/hubspot-req-field.png"/></figure>
+      <li>要設置必填字段，將鼠標懸停在該字段上，然後點擊<strong>更多&gt;必填</strong>。必填字段在字段標籤旁邊顯示*。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="hubspot form field required" src="/assets/images/admin/hubspot-req-field.png" /></figure>
       </li>
-      <li>按一下頁面頂端的「<strong>選項</strong>」連結。</li>
-      <li><strong>對於訪客提交此表單後應該發生</strong>的事情，按<strong>一下 [顯示感謝訊息</strong> ]。保留默認消息，因為它永遠不會顯示。
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="中心表單消息" src="/assets/images/admin/hubspot-submit-form-options.png"/></figure>
+      <li>點擊<strong>選項</strong>頁面頂部的鏈接。</li>
+      <li>為了<strong>訪客提交此表格後應該怎麼辦</strong>， 點擊<strong>顯示感謝信息</strong>。保留默認消息，因為它將永遠不會顯示。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="hubspot form message" src="/assets/images/admin/hubspot-submit-form-options.png" /></figure>
       </li>
-      <li>按一下頁面頂端的「<strong>樣式與預覽</strong>」連結。預設會出現<strong>桌面</strong>預覽。</li>
-      <li><strong>按一下頁面頂端的 [發佈]，將變更發佈至表單。</strong></li>
+      <li>點擊<strong>樣式和預覽</strong>頁面頂部的鏈接。默認情況下，<strong>桌面</strong>預覽將出現。</li>
+      <li>點擊<strong>發布</strong>在頁面頂部以發布對錶單所做的更改。</li>
     </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="edit">複製和編輯表單內嵌程式碼</h2>
-    <p>要在Brightcove Campaign中使用表格，您將需要復制和編輯表格嵌入代碼。此外，您可能想要對表單做一些基本的樣式。在下面的步驟中，我們將表單嵌入代碼複製到 HTML 編輯器，然後對表單進行一些樣式更改。</p>
+    <h2 id="edit">複製和編輯表單嵌入代碼</h2>
+    <p>要在Brightcove Campaign中使用表格，您將需要復制和編輯表格嵌入代碼。另外，您可能需要對錶單進行一些基本的樣式設置。在下面的步驟中，我們將表單嵌入代碼複製到HTML編輯器，然後對錶單進行一些樣式更改。</p>
     <ol class="bcls-tasklist-restart">
-      <li>請點擊<strong>分享</strong>在頁面的右上方。</li>
-      <li> 請點擊<strong>嵌入代碼</strong>接著<strong>複製</strong>將嵌入代碼複製到剪貼板。
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="hubspot表單嵌入代碼" src="/assets/images/admin/hubspot-copy-form-embed.png"/></figure>
+      <li>點擊<strong>分享</strong>在頁面的右上方。</li>
+      <li> 點擊<strong>嵌入代碼</strong>然後<strong>複製</strong>將嵌入代碼複製到剪貼板。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="hubspot form embed code" src="/assets/images/admin/hubspot-copy-form-embed.png" /></figure>
       </li>
-      <li>將內嵌程式碼貼到您選擇的 HTML 編輯器中。</li>
-      <li>嵌入代碼需要進行一些小的更改，因此Brightcove Campaign知道在提交表單時將其關閉。找到在行尾<strong><code translate="No"> formId:</code></strong>加入逗號的行。</li>
-      <li>在行下方加入此<strong><code translate="No"> formId:</code></strong>行。
+      <li>將嵌入的代碼粘貼到您選擇的HTML編輯器中。</li>
+      <li>嵌入代碼需要進行一些小的更改，因此Brightcove Campaign知道在提交表單時將其關閉。找到具有<strong><code translate="No"> formId:</code></strong>在行末添加逗號。</li>
+      <li>將此行添加到<strong><code translate="No"> formId:</code></strong>線。
         <pre>
 <code translate="No">onFormSubmit: bcLeadForm.submit</code></pre>
       </li>
-      <li>默認情況下，當表單顯示在 Brightcove 播放器內時，表單將顯示在玩家上的透明背景上。將下列 CSS 新增至內嵌程式碼，將背景色彩變更為灰色。<br/><code translate="No">&lt;style&gt;<br />
+      <li>默認情況下，當窗體顯示在Brightcove Player內部時，窗體將顯示在播放器上方的透明背景上。將以下 CSS 添加到嵌入代碼以將背景顏色更改為灰色。<br />
+        <code translate="No">&lt;style&gt;<br />
         body {<br />
         background-color: rgba(204,204,204,0.9);<br />
         margin: 0;<br />
@@ -466,172 +62,17 @@ Brightcove
     </ol>
   </section>
   <section class="bcls-section">
-    <h2 id="formdata">驗證表單資料</h2>
-    <p>使用自訂商機表單擷取的潛在客戶將新增為您的 HubSpot 帳戶中的連絡人。檢視潛在客戶表單擷取的資料的簡單方法是在 HubSpot 中建立智慧列示。</p>
+    <h2 id="formdata">在HubSpot中驗證表單數據</h2>
+    <p>使用自定義潛在客戶表單捕獲的潛在客戶將作為聯繫人添加到您的HubSpot帳戶中。查看潛在客戶表單捕獲的數據的一種簡單方法是在HubSpot中創建智能列表。</p>
     <ol class="bcls-tasklist-restart">
-      <li>登入您的帳戶。</li>
-      <li>請點擊<strong>營銷學</strong><strong>&gt;表格</strong>。</li>
-      <li>當您將滑鼠移到表單上方時，會出現 [ <strong>動作</strong> ] 功能表。按一下「<strong>動作」&gt; 檢視提交</strong>。將會出現表單提交的清單。
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="樞紐線索" src="/assets/images/admin/hubspot-form-submissions.png"/></figure>
+      <li>登錄到您的HubSpot帳戶。</li>
+      <li>點擊<strong>營銷</strong><strong>&gt;表格</strong>。</li>
+      <li>當您將鼠標懸停在表格上時，<strong>動作</strong>菜單將會出現。點擊<strong>動作&gt;查看提交</strong>。表單提交的列表將出現。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="hubspot leads" src="/assets/images/admin/hubspot-form-submissions.png" /></figure>
       </li>
-      <li>當您將滑鼠游標置於列上時，按一下 [檢視提交] 以檢視表單資料。
-        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="hubspot線索詳細信息" src="/assets/images/admin/hubspot-submission-details.png"/></figure>
+      <li>當您將鼠標懸停在一行上時，單擊<strong>查看提交</strong>查看表單數據。
+<figure class="bcls-figure"><img class="bcls-image--no-border" alt="hubspot lead details" src="/assets/images/admin/hubspot-submission-details.png" /></figure>
       </li>
     </ol>
   </section>
 </article>
-
-<!-- complete bootstrap layout -->
-    </div>
-    <div class="col-sm-2 right-side-bar">
-      
-      <nav class="right-side-nav" id="right_side_nav">
-        <h6 class="toc">頁面內容</h6>
-        <ul id="in_page_nav" class="list-none"></ul>
-      </nav>
-      
-    </div>
-  </div>
-</div>
-
-<hr>
-<footer class="bcls-footer" role="contentinfo">  <div class="row">
-    <div class="region region-footer-top-center col-md-12">
-      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
-
-        <h2>布萊特灣支援</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://status.brightcove.com">系統狀態</a>
-          </li>
-          <li>
-            <a href="https://supportportal.brightcove.com/s/login/?">聯絡支援</a>
-          </li>
-          <li>
-            <a href="https://support.brightcove.com/">文獻資料</a>
-          </li>
-        </ul>
-
-      </nav>
-      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
-
-        <h2>訓練</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">線上課程</a>
-          </li>
-          <li>
-            <a href="https://studio.support.brightcove.com/training/register-training.html">註冊課程</a>
-          </li>
-          <li>
-            <a href="https://university.brightcove.com/">布萊特灣大學</a>
-          </li>
-        </ul>
-
-      </nav>
-      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
-
-        <h2>Brightcove</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://www.brightcove.com">亮麗</a>
-          </li>
-          <li>
-            <a href="https://supportportal.brightcove.com/s/login/?">聯絡我們</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div class="row">
-    <div class="region region-footer-bottom-center col-md-12">
-      <div class="bcls-copyright footer-menu">
-        <table>
-          <tr>
-            <td>
-              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> 布萊特灣公司版權所有</div>
-            </td>
-            <td><a href="https://www.brightcove.com/en/legal/privacy">私隱</a> | 條<a href="https://www.brightcove.com/en/terms-and-conditions">款及細則</a></td>
-            <td>
-              <div class="gf-links-cols footer-menu">
-                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-      
-  var searchBox = sajari.init({
-    mode: "search-box",
-    project: "1588255093746585379", // Set this to your project.
-    collection: "brightcove-documenation", // Set this to your collection.
-    instantPipeline: "autocomplete", // Pipeline used as you type
-    inputPlaceholder: "Search", // Input element placeholder
-    maxSuggestions: 5, // Maximum number of suggestions to show
-    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
-  });
-  
-    searchBox("sub", "pipeline.search-sent", function (_, query) {
-      window.location = "/search.html?q=" + encodeURIComponent(query.q);
-    });
-  
-
-</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
-  
-  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
-  
-  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
-  <script src="/assets/js/sites_nav.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
-  <script src="/assets/js/feedback.js"></script>
-  
-  <script src="/assets/js/sajari-search-foot.js"></script>
-  
-  <!-- <script src="/assets/js/sajari-index.js"></script> -->
-  <style>
-    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
-      background-color: lightblue;
-    }
-    div.sj-tabs__tab {
-      margin-top: 3rem;
-      margin-left: .3rem;
-      border-top-left-radius: .4rem;
-      border-top-right-radius: .4rem;
-      background-color:#e8e8e8;
-    }
-
-    div.sj-tabs__tab.sj-tabs__tab--selected {
-      border-bottom-color: crimson;
-      background-color: #f8f8f8;
-    }
-
-    p.sj-results__result__description.css-p9jvyt {
-      font-size: 1rem;
-    }
-
-    .sj-result__text.css-31l7gp h3 {
-      color: navy;
-      font-size: 1.4rem;
-    }
-    </style>
-
-</body>
-
-</html>

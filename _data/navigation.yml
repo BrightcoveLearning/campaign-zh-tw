@@ -1,0 +1,133 @@
+- section: 
+  name: 首頁
+  url: /index.html
+- section: 
+  name: 入門
+  url: /get-started/index.html
+  docs:
+    - name: 運動培訓視頻
+      url: /get-started/brightcove-campaign-training-videos.html
+    - name: Brightcove 活動入門
+      url: /get-started/getting-started-brightcove-campaign.html
+    - name: 開始您的 Brightcove 活動審判
+      url: /get-started/getting-started-brightcove-campaign-trial.html
+    - name: 視頻內容類型概述
+      url: /get-started/overview-video-content-types.html
+    - name: 上傳和發布您的第一個視頻
+      url: /get-started/uploading-publishing-your-first-video.html
+- section: 
+  name: 管理影片
+  url: /videos/index.html
+  docs:
+    - name: 添加文字軌道
+      url: /videos/adding-text-tracks-to-a-video.html
+    - name: 捕獲海報和縮略圖圖像
+      url: /videos/capturing-poster-and-thumbnail-images.html
+    - name: 通過電子郵件推動視頻觀看
+      url: /videos/driving-video-views-email.html
+    - name: 編輯視頻屬性
+      url: /videos/editing-video-properties.html
+    - name: 管理影片
+      url: /videos/managing-videos.html
+    - name: 出版影片
+      url: /videos/publishing-videos.html
+    - name: 搜索視頻
+      url: /videos/how-to-search-for-videos.html
+    - name: 上傳海報和縮略圖圖像
+      url: /videos/uploading-poster-and-thumbnail-images.html
+    - name: 上載影片
+      url: /videos/uploading-videos.html
+    - name: 處理共享視頻
+      url: /videos/working-with-shared-videos.html
+- section: 
+  name: 查看儀表板
+  url: /dashboard/index.html
+  docs:
+    - name: 儀表板概覽
+      url: /dashboard/dashboard-overview.html
+    - name: 查看高級儀表板
+      url: /dashboard/reviewing-adv-dashboard.html
+    - name: 查看基本儀表板
+      url: /dashboard/reviewing-basic-dashboard.html
+- section: 
+  name: 查看分析
+  url: /analytics/index.html
+  docs:
+    - name: 視頻基準評分如何計算
+      url: /analytics/how-vbs-calculated.html
+    - name: 查看視頻分析
+      url: /analytics/reviewing-video-analytics.html
+    - name: 使用平視顯示器Chrome擴展程序
+      url: /analytics/using-hud.html
+- section: 
+  name: 管理帳戶
+  url: /admin/index.html
+  docs:
+    - name: 配置Adobe Analytics
+      url: /admin/configuring-adobe-analytics-event-tracking.html
+    - name: 配置Google Analytics（分析）
+      url: /admin/configuring-google-analytics-event-tracking.html
+    - name: 配置MAP連接
+      url: /admin/configuring-map-connections.html
+    - name: 連接到HubSpot（客戶端API）
+      url: /admin/connecting-to-hubspot-client-side-api.html
+    - name: 連接到HubSpot（REST API）
+      url: /admin/connecting-to-hubspot-rest-api.html
+    - name: 連接到Marketo（蒙奇金）
+      url: /admin/connecting-to-marketo-munchkin.html
+    - name: 連接到 Marketo（REST API）
+      url: /admin/connecting-to-marketo-rest-api.html
+    - name: 連接到Oracle Eloqua
+      url: /admin/connecting-to-oracle-eloqua.html
+    - name: 連接到Salesforce
+      url: /admin/connecting-to-salesforce.html
+    - name: 為 Pardot 創建 Salesforce 對象
+      url: /admin/creating-salesforce-object-pardot.html
+    - name: 創建銷售線索表格
+      url: /admin/creating-lead-forms.html
+    - name: 在HubSpot中創建銷售線索表格
+      url: /admin/creating-lead-forms-hubspot.html
+    - name: 在Marketo中創建銷售線索表格
+      url: /admin/creating-lead-forms-marketo.html
+    - name: 在Oracle Eloqua中創建潛在客戶表單
+      url: /admin/creating-lead-forms-oracle-eloqua.html
+    - name: 在Salesforce中創建潛在客戶表單
+      url: /admin/creating-lead-forms-salesforce.html
+    - name: 管理帳戶信息
+      url: /admin/managing-account-information.html
+    - name: 管理帳戶設置
+      url: /admin/managing-account-settings.html
+    - name: 管理媒體共享設置
+      url: /admin/managing-media-sharing-settings.html
+    - name: 管理個人資料信息
+      url: /admin/managing-profile-information.html
+    - name: 管理用戶
+      url: /admin/managing-users.html
+    - name: 造型球員
+      url: /admin/styling-players.html
+    - name: 在Google Analytics（分析）中查看玩家事件數據
+      url: /admin/reviewing-player-event-data-in-google-analytics.html
+    - name: 查看賬單信息
+      url: /admin/viewing-billing-information.html
+- section: 
+  name: 發行說明
+  url: /release-notes/index.html
+  docs:
+    - name: Brightcove 活動發布說明
+      url: /release-notes/campaign-release-notes.html
+- section: 
+  name: 支持
+  url: /support/index.html
+  docs:
+    - name: '查看 Brightcove 系統狀態頁面'
+      url: '/support/viewing-brightcove-system-status-page.html'
+    - name: '與銷售人員聯繫'
+      url: '/support/contact-sales.html'
+    - name: '打開支持案例'
+      url: '/support/opening-case-with-brightcove-support.html'
+    - name: '重置您的支持門戶密碼'
+      url: '/support/reset-support-portal-password.html'
+
+# TODO correct and add additional sections/pages
+# TODO note that the order of items here determines the order in navigation
+# TODO indentation in YAML is crucial and must be with spaces (not tabs!)
